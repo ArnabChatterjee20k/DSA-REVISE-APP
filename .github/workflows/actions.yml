@@ -2,13 +2,15 @@ name: run app.py
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # At 00:00 on Monday
+    - cron: '*/2 * * * *' # At 00:00 on Monday
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
+      - name: Checkout
+        uses: actions/checkout@v2.6.0
+        
       - name: setup python
         uses: actions/setup-python@v4
         with:
