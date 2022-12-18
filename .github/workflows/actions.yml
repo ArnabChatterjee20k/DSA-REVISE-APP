@@ -24,4 +24,6 @@ jobs:
       - name: execute py script # run main.py
         env:
           SOME_SECRET: ${{ secrets.DSA_SHEET }}
-        run: python app.py
+        run: |
+        run: echo "The API key is:${{env.API_KEY}}"  
+        python app.py
