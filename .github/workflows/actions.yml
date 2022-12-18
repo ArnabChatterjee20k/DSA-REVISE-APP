@@ -26,4 +26,3 @@ jobs:
           SOME_SECRET: ${{ secrets.DSA_SHEET }}
         run: |
         run: echo "The API key is:${{env.API_KEY}}"  
-        python app.py
