@@ -1,7 +1,7 @@
 import os
 import requests
 
-url = os.getenv("DSA_SHEET")
+url = os.environ("DSA_SHEET")
 
 content = requests.get(url)
 json = content.json()
