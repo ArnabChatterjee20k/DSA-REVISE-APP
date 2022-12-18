@@ -25,4 +25,4 @@ jobs:
         env:
           SOME_SECRET: ${{ secrets.DSA_SHEET }}
         run: |
-          echo "The API key is:${{env.API_KEY}}"  
+          echo "The API key is:${{env.DSA_SHEET}}"  
